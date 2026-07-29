@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Bitcount Grid Double", system-ui;
+}
+
+:root {
+    --heading-font: 'Orbitron', sans-serif;
+    --body-font: 'Inter', sans-serif;
+}
+
+
+/* start navbar section */
+
+#navbar {
+    background-color: #0B0E14;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.dropdown-menu {
+    background-color: #0B0E14;
+}
+
+.dropdown-item {
+    color: #00FFFF;
+}
+
+.electricBlue,
+.nav-link {
+    color: #00D4FF;
+    font-family: var(--body-font);
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #00FFFF;
+}
+
+.navbar .nav-link.active {
+    color: #00D4FF;
+}
+
+.navbar .nav-link.active:hover {
+    color: #00FFFF;
+}
+
+.nav-link.active {
+    color: #00FFFF !important;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #00FFFF;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* end navbar section */
+
+
+/* start header section */
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Images/pixel_storm_header.jpg');
+    background-size: cover;
+}
+
+header h2 {
+    color: #00D4FF;
+}
+
+header p {
+    color: #E0E0E0;
+    font-size: 25px;
+}
+
+header img {
+    width: 250px;
+}
+
+header .btn {
+    background-color: #00D4FF;
+    color: black;
+}
+
+header .btn:hover {
+    background-color: #00FFFF;
+    color: black;
+}
+
+
+/* end header section */
+
+
+/* start games section */
+
+#games {
+    background-color: #0B0E14;
+}
+
+.titleSection {
+    text-align: center;
+    color: #00FFFF;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+#games .card {
+    background-color: #1A0B2E;
+    color: #00FFFF;
+    border: 2px solid #0B0E14;
+    padding: 10px;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#games .cardImg {
+    position: relative;
+    overflow: hidden;
+}
+
+#games .cardImg img {
+    display: block;
+    width: 100%;
+    filter: brightness(70%);
+    transition: all 0.3s;
+}
+
+#games .card:hover {
+    transform: scale(1.1);
+}
+
+#games .card:hover img {
+    filter: brightness(100%);
+}
+
+#games .card:hover .price {
+    background-color: #00D4FF;
+}
+
+#games .cardHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+#games .cardHeader .price {
+    color: black;
+    background-color: #00FFFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 10px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    height: 10px;
+}
+
+#games .card-text {
+    text-align: center;
+    overflow: hidden;
+    min-height: 70px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.gameDesc {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #00D4FF;
+    padding-top: 20px;
+}
+
+.gameType,
+.platformGame {
+    color: black;
+    background-color: #00FFFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 10px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* end games section */
+
+
+/* start categories section */
+
+#categories {
+    background: radial-gradient(circle at top right, #1A0B2E 0%, #0B0E14 100%);
+}
+
+.categoryCard {
+    background-color: #1A0B2E;
+    border: 2px solid #00D4FF;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s;
+    height: 200px;
+}
+
+.categoryCard i {
+    font-size: 45px;
+    color: #00D4FF;
+    margin-bottom: 20px;
+}
+
+.categoryCard h4 {
+    color: #00FFFF;
+}
+
+.categoryCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00D4FF;
+}
+
+
+/* end categories section */
+
+
+/* start reviews section */
+
+#reviews {
+    background: #0B0E14;
+}
+
+.reviewCard {
+    width: 70%;
+    margin: auto;
+    background-color: #1A0B2E;
+    border: 2px solid #00D4FF;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.reviewCard img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00D4FF;
+    margin-bottom: 20px;
+}
+
+.reviewCard h3 {
+    color: #00FFFF;
+    margin-bottom: 5px;
+}
+
+.reviewCard span {
+    color: #bbb;
+}
+
+.reviewCard p {
+    margin-top: 25px;
+    line-height: 1.8;
+    color: #ddd;
+    font-size: italic;
+}
+
+.stars {
+    color: gold;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #00D4FF;
+    border-radius: 50%;
+    padding: 18px;
+}
+
+
+/* end reviews section */
+
+
+/* start about section */
+
+#about {
+    background-color: #1A0B2E;
+    color: white;
+}
+
+#about h3 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#about h3 span {
+    color: #00FFFF;
+}
+
+#about p {
+    color: #cfcfcf;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.aboutImg {
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.3);
+}
+
+.aboutStats {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.stat {
+    background-color: #1A0B2E;
+    border: 2px solid #00D4FF;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    transition: all 0.3s;
+}
+
+.stat:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #00D4FF;
+}
+
+.stat h2 {
+    color: #00FFFF;
+    font-size: 35px;
+}
+
+.stat span {
+    color: #ddd;
+}
+
+
+/* end about section */
+
+
+/* start contact section */
+
+#contact {
+    background-color: #0B0E14;
+    color: white;
+}
+
+#contact h3 {
+    color: #00FFFF;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.contactInfo p {
+    margin: 18px 0;
+}
+
+.contactInfo i {
+    color: #00D4FF;
+    width: 30px;
+}
+
+.form-control {
+    background: #1A0B2E;
+    border: 2px solid #2b2b2b;
+    color: white;
+    padding: 14px;
+}
+
+.form-control:focus {
+    background-color: #1A0B2E;
+    color: white;
+    border-color: #00D4FF;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+#contact .btn {
+    background-color: #00D4FF;
+    color: #000;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+#contact .btn:hover {
+    background: #00FFFF;
+}
+
+.socialIcons {
+    margin-top: 30px;
+}
+
+.socialIcons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #00D4FF;
+    color: #00D4FF;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.socialIcons a:hover {
+    background: #00D4FF;
+    color: #0B0E14;
+    transform: translateY(-5px);
+}
+
+
+/* end contact section */
+
+
+/* HTML: <div class="loader"></div> */
+
+#loading {
+    position: fixed;
+    inset: 0;
+    background-color: #0B0E14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.loader {
+    width: 90px;
+    height: 24px;
+    padding: 2px 0;
+    box-sizing: border-box;
+    display: flex;
+    animation: l5-0 3s infinite steps(6);
+    background: linear-gradient(#000 0 0) 0 0/0% 100% no-repeat, radial-gradient(circle 3px, #eeee89 90%, #0000) 0 0/20% 100% #000;
+    overflow: hidden;
+}
+
+.loader::before {
+    content: "";
+    width: 20px;
+    transform: translate(-100%);
+    border-radius: 50%;
+    background: #ffff2d;
+    animation: l5-1 .25s .153s infinite steps(5) alternate, l5-2 3s infinite linear;
+}
+
+@keyframes l5-1 {
+    0% {
+        clip-path: polygon(50% 50%, 100% 0, 100% 0, 0 0, 0 100%, 100% 100%, 100% 100%)
+    }
+    100% {
+        clip-path: polygon(50% 50%, 100% 65%, 100% 0, 0 0, 0 100%, 100% 100%, 100% 35%)
+    }
+}
+
+@keyframes l5-2 {
+    100% {
+        transform: translate(90px)
+    }
+}
+
+@keyframes l5-0 {
+    100% {
+        background-size: 120% 100%, 20% 100%
+    }
+}
+
+
+/* start modal section */
+
+.modal-content {
+    background-color: #1A0B2E;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 20px #00FFFF;
+}
+
+.playBtn {
+    background-color: #00FFFF;
+    color: #0B0E14;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.modal-body {
+    border-radius: 20px;
+}
+
+
+/* end modal section */
