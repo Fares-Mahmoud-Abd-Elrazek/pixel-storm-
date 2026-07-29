@@ -78,7 +78,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Images/pixel_storm_header.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Images/pixel_storm_header.jpg');
     background-size: cover;
 }
 
