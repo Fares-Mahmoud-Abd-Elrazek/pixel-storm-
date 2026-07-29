@@ -328,6 +328,10 @@ header .btn:hover {
     background-color: #00D4FF;
 }
 
+.carousel-indicators .active {
+    opacity: 1;
+}
+
 
 /* end reviews section */
 
